@@ -1,0 +1,121 @@
+@font-face {
+   font-family: "Montserrat";
+   src: url("../fonts/Montserat-bold/Montserrat-Bold.woff2") format("woff2"),
+      url("../fonts/Montserat-bold/Montserrat-Bold.woff") format("woff");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Montserrat";
+   src: url("../fonts/Montserat-black/Montserrat-Black.woff2") format("woff2"),
+      url("../fonts/Montserat-black/Montserrat-Black.woff") format("woff");
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Montserrat";
+   src: url("../fonts/Montserat-regular/Montserrat-Regular.woff2") format("woff2"),
+      url("../fonts/Montserat-regular/Montserrat-Regular.woff") format("woff");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Montserrat";
+   src: url("../fonts/Montserat-light/Montserrat-Light.woff2") format("woff2"),
+      url("../fonts/Montserat-light/Montserrat-Light.woff") format("woff");
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Raleway";
+   src: url("../fonts/RalewayBold/raleway-bold-webfont.eot");
+   src: url("../fonts/RalewayBold/raleway-bold-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/RalewayBold/raleway-bold-webfont.woff2") format("woff2"),
+      url("../fonts/RalewayBold/raleway-bold-webfont.woff") format("woff"),
+      url("../fonts/RalewayBold/raleway-bold-webfont.ttf") format("truetype"),
+      url("../fonts/RalewayBold/raleway-bold-webfont.svg#/ralewaybold") format("svg");
+   font-weight: 700;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Raleway";
+   src: url("../fonts/RalewayLight/raleway-light-webfont.eot");
+   src: url("../fonts/RalewayLight/raleway-light-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/RalewayLight/raleway-light-webfont.woff2") format("woff2"),
+      url("../fonts/RalewayLight/raleway-light-webfont.woff") format("woff"),
+      url("../fonts/RalewayLight/raleway-light-webfont.ttf") format("truetype"),
+      url("../fonts/RalewayLight/raleway-light-webfont.svg#ralewaylight") format("svg");
+   font-weight: 300;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Raleway";
+   src: url("../fonts/RalewayReg/raleway-regular-webfont.eot");
+   src: url("../fonts/RalewayReg/raleway-regular-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/RalewayReg/raleway-regular-webfont.woff2") format("woff2"),
+      url("../fonts/RalewayReg/raleway-regular-webfont.woff") format("woff"),
+      url("../fonts/RalewayReg/raleway-regular-webfont.ttf") format("truetype");
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Roboto";
+   src: url("../fonts/Roboto-Regular/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Roboto-Regular/Roboto-Regular.woff") format("woff"),
+      url("../fonts/Roboto-Regular/Roboto-Regular.ttf") format("truetype"),
+      url("../fonts/Roboto-Regular/Roboto-Regular.svg#Roboto-Regular") format("svg");
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Roboto";
+   src: url("../fonts/Roboto-Light/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Roboto-Light/Roboto-Light.woff") format("woff"),
+      url("../fonts/Roboto-Light/Roboto-Light.ttf") format("truetype"),
+      url("../fonts/Roboto-Light/Roboto-Light.svg#Roboto-Light") format("svg");
+   font-weight: 300;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Roboto";
+   src: url("../fonts/Roboto-Bold/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Roboto-Bold/Roboto-Bold.woff") format("woff"),
+      url("../fonts/Roboto-Bold/Roboto-Bold.ttf") format("truetype"),
+      url("../fonts/Roboto-Bold/Roboto-Bold.svg#Roboto-Bold") format("svg");
+   font-weight: 700;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "RobotoSlab";
+   src: url("../fonts/RobotoSlab-Bold/RobotoSlab-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/RobotoSlab-Bold/RobotoSlab-Bold.woff") format("woff"),
+      url("../fonts/RobotoSlab-Bold/RobotoSlab-Bold.ttf") format("truetype"),
+      url("../fonts/RobotoSlab-Bold/RobotoSlab-Bold.svg#Roboto-Bold") format("svg");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "RobotoSlab";
+   src: url("../fonts/RobotoSlab-Reg/RobotoSlab-Regular.woff2") format("woff2"),
+      url("../fonts/RobotoSlab-Reg/RobotoSlab-Regular.woff") format("woff"),
+      url("../fonts/RobotoSlab-Reg/RobotoSlab-Regular.ttf") format("truetype");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
