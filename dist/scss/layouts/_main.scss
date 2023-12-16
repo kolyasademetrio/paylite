@@ -16,19 +16,19 @@ h6 {
 }
 
 p {
-  @include font($base-fz, $base-lh, $base-fc, 400, $base-ff);
+  @include font($base-font-size, $base-line-height, $base-text-color, 400, $base-regular-font-family);
 }
 
 h1 {
-  @include font($fz-h1, $lh-h1, $secondary-fc, 400, $base-ff);
+  @include font($font-size-h1, $line-height-h1, $secondary-text-color, 400, $base-regular-font-family);
 }
 
 h2 {
-  @include font($fz-h2, $lh-h2, $secondary-fc, 400, $base-ff);
+  @include font($font-size-h2, $line-height-h2, $secondary-text-color, 400, $base-regular-font-family);
 }
 
 h3 {
-  @include font($fz-h3, $lh-h3, $secondary-fc, 400, $base-ff);
+  @include font($font-size-h3, $line-height-h3, $secondary-text-color, 400, $base-regular-font-family);
 }
 
 ul,

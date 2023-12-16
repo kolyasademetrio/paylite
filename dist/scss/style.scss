@@ -1,21 +1,9 @@
 @import "base/_reset";
-@import "components/_preloader";
 @import "base/_fonts";
 // @import "thirdparty/_font-awesome.min.scss";
 @import "thirdparty/_magnific-popup.scss";
 @import "thirdparty/_slick";
-@import "layout/_header";
-@import "layout/_footer";
-@import "layout/_content";
-@import "components/_nav";
-@import "components/_hero";
-@import "components/_shape";
-@import "components/_widget";
-@import "components/_toggle";
-@import "components/_section";
-@import "components/_video";
-@import "components/_form";
-@import "components/_slider";
-@import "components/_about";
-@import "components/photo";
-@import "layout/_media";
+
+@import "layouts/_header";
+@import "layouts/_footer";
+@import "layouts/_main";
