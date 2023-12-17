@@ -1,0 +1,196 @@
+.presentation {
+  padding: 120px 0;
+  position: relative;
+
+  @media screen and (max-width: $tablet-media) {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
+  &__inner {
+    display: flex;
+
+    @media screen and (max-width: $tablet-media) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__imgWrap {
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 584px;
+    width: 584px;
+    margin: 0 30px 0 0;
+
+    @media screen and (max-width: $tablet-media) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    @media screen and (max-width: $tablet-media) {
+      display: none;
+    }
+
+    &.m-secondary {
+      display: none;
+
+      @media screen and (max-width: $tablet-media) {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+
+    @media screen and (max-width: $tablet-media) {
+      padding-top: 40px;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    color: $color-text;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0;
+
+    @media screen and (max-width: $tablet-media) {
+      gap: 15px;
+    }
+  }
+
+  &__titleItem {
+    &.m-primary {
+      font-family: $ff-secondary-bold;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1;
+
+      @media screen and (max-width: $tablet-media) {
+        font-size: 32px;
+        margin-bottom: 14px;
+      }
+    }
+
+    &.m-secondary {
+      font-family: $ff-base-bold;
+      font-size: 72px;
+      line-height: 1;
+      color: $color-text-accent;
+      text-transform: uppercase;
+
+      @media screen and (max-width: $tablet-media) {
+        font-size: 60px;
+      }
+    }
+
+    &.m-tertiary {
+      font-family: $ff-base-bold;
+      font-size: 48px;
+      line-height: 1;
+      text-transform: uppercase;
+
+      @media screen and (max-width: $tablet-media) {
+        font-size: 40px;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 154px;
+    width: 241px;
+    height: auto;
+    display: block;
+
+    @media screen and (max-width: $tablet-media) {
+      display: none;
+    }
+
+    &.m-secondary {
+      display: none;
+
+      @media screen and (max-width: $tablet-media) {
+        display: block;
+        height: auto;
+        width: 128px;
+        top: 250px;
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__btnWrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 48px;
+
+    @media screen and (max-width: $tablet-media) {
+      gap: 40px;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 234px;
+    max-width: 355px;
+    padding: 12px 0 13px;
+    color: $color-white;
+    font-family: $ff-secondary-bold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(44deg, #04E8F4 28.36%, #2E459C 72.74%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: $mobile-media) {
+      width: 100%;
+    }
+  }
+
+  &__link {
+    font-family: $ff-secondary-bold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    color: $color-text-secondary;
+    text-decoration: none;
+    white-space: nowrap;
+
+    @media screen and (max-width: $tablet-media) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
