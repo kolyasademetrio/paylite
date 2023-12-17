@@ -1,7 +1,200 @@
 .header {
+  padding: 28px 0;
+
+  @media screen and (max-width: $tablet-media) {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  &__logoWrap {
+    width: 228px;
+    margin: 0 15px 0 0;
+
+    @media screen and (max-width: $tablet-media) {
+      width: 164px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__logoLink {
+    display: block;
+  }
+
+  &__logo {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  &__menuBtnClose {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0;
+
+    @media screen and (max-width: $tablet-media) {
+      display: block;
+      position: absolute;
+      top: 30px;
+      right: 26px;
+    }
+  }
+
+  &__menuBtnCloseIcon {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
+
+  &__menuWrap {
+    margin-left: auto;
+    display: flex;
+    align-items: stretch;
+    padding: 3px 0 0;
+
+    @media screen and (max-width: $tablet-media) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      background-color: $color-grey;
+      width: 100%;
+      height: 100vh;
+      flex-direction: column;
+      padding-top: 88px;
+      display: none;
+
+      &.m-active {
+        display: block;
+      }
+    }
+  }
+
+  &__menuPhone {
+    display: none;
+    font-family: $ff-base-bold;
+    font-weight: 700;
+    font-size: 20px;
+    white-space: nowrap;
+    text-align: center;
+
+    @media screen and (max-width: $tablet-media) {
+      display: block;
+    }
+  }
+
+  &__menuList {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: $tablet-media) {
+      flex-direction: column;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 74px;
+    }
+  }
+
+  &__menuListItem {
+    @media screen and (max-width: $tablet-media) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__menuListItemLink {
+    display: block;
+    padding: 0 8px;
+    text-transform: uppercase;
+    color: $color-text;
+    font-family: $ff-base-regular;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  &__phoneWrapper {
+    margin: 0 0 0 36px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: $tablet-media) {
+      margin-left: auto;
+      margin-right: 54px;
+    }
+  }
+
+  &__phone {
+    display: block;
+    font-family: $ff-base-bold;
+    font-weight: 700;
+    font-size: 20px;
+    white-space: nowrap;
+
+    @media screen and (max-width: $tablet-media) {
+      font-size: 18px;
+    }
+  }
+
+  &__phoneText {
+    display: inline-block;
+
+    @media screen and (max-width: $tablet-media) {
+      display: none;
+    }
+  }
+
+  &__phoneIcon {
+    display: none;
+    width: 48px;
+    height: 48px;
+
+    @media screen and (max-width: $tablet-media) {
+      display: block;
+    }
+  }
+
+  &__menuBtnWrapper {
+    display: none;
+
+    @media screen and (max-width: $tablet-media) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__menuBtn {
+    width: 38px;
+    height: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  &__menuBtnLine {
+    width: 100%;
+    height: 3px;
+    background-color: $color-text;
+
+    &.m-first {}
+
+    &.m-second {}
+
+    &.m-third {}
+  }
 
 
-  @media screen and (max-width: $desktop-media) {}
-
-  @media screen and (max-width: $tablet-media) {}
 }

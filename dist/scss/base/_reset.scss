@@ -4,7 +4,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: $base-regular-font-family;
+  font-family: $ff-base-regular;
   background-color: $base-bg;
   height: 100%;
   line-height: 1;
@@ -151,7 +151,7 @@ html {
 input:not(input[type="checkbox"]):not(input[type="radio"]),
 textarea {
   color: #333;
-  font-family: $base-regular-font-family;
+  font-family: $ff-base-regular;
   outline: none;
   border-radius: 0;
   -moz-border-radius: 0;
@@ -250,7 +250,7 @@ body.error404 {
       font: {
         weight: 700;
         size: 57px;
-        family: $base-regular-font-family;
+        family: $ff-base-regular;
         padding-top: 0;
         padding-top: 0;
       }
@@ -260,7 +260,7 @@ body.error404 {
       font: {
         weight: 700;
         size: 47px;
-        family: $base-regular-font-family;
+        family: $ff-base-regular;
       }
     }
   }

@@ -1,40 +1,46 @@
 /* reset */
 $min-width: 320px;
-$max-width: 1170px;
-$max-width-secondary: 1470px;
+$max-width: 1164px;
+$max-width-wide: 1464px;
 $base-bg: #fff;
 
 $base-font-size: 20px;
 $base-line-height: 1.6;
 
-$base-regular-font-family: "rubik-regular", sans-serif;
-$base-bold-font-family: "rubik-bold", sans-serif;
+$ff-base-regular: "rubik-regular", sans-serif;
+$ff-base-bold: "rubik-bold", sans-serif;
 
-$secondary-regular-font-family: "co-headline-regular", sans-serif;
-$secondary-light-font-family: "co-headline-light", sans-serif;
-$secondary-bold-font-family: "co-headline-bold", sans-serif;
+$ff-secondary-regular: "co-headline-regular", sans-serif;
+$ff-secondary-light: "co-headline-light", sans-serif;
+$ff-secondary-bold: "co-headline-bold", sans-serif;
 
 $default-transition: all 0.2s linear;
 
 /* main variables */
-$background-main: #54595f;
-$border: rgba(255, 255, 255, 0.3);
-$border-secondary: #ddd;
-$background-bright: rgba(255, 255, 255, 1);
-$background-dark: rgba(0, 0, 0, 1);
-$background-dark-secondary: #020202;
-$color-text: rgba(255, 255, 255, 1);
+// $background-main: #54595f;
+// $border: rgba(255, 255, 255, 0.3);
+// $border-secondary: #ddd;
+// $background-bright: rgba(255, 255, 255, 1);
+// $background-dark: rgba(0, 0, 0, 1);
+// $background-dark-secondary: #020202;
+
+
+$color-white: #FFFFFF;
+$color-grey: #D9D9D9;
+$color-text: #2E459C;
+$color-text-secondary: #1E1E1E;
+$color-text-accent: #F36E2F;
+
 $link-color: $color-text;
-$secondary-text: rgb(122, 122, 122);
-$background-btn-hover: #28db25;
+$background-btn-hover: $color-text;
 $link-hover: $background-btn-hover;
 
 //text, titles
-$base-text-color: #000;
-$secondary-text-color: #000;
-$text-color: #000;
-$title-color: #000;
-$title-font-family: $secondary-regular-font-family;
+// $base-text-color: #000;
+// $secondary-text-color: #000;
+// $text-color: #000;
+// $title-color: #000;
+// $title-font-family: $ff-secondary-regular;
 
 $small: 0px;
 $medium: 767px;
@@ -47,5 +53,5 @@ $line-height-h2: 1.1;
 $font-size-h3: 28px;
 $line-height-h3: 32px;
 
-$desktop-media: 991px;
-$tablet-media: 768px;
+$tablet-media: 991px;
+$mobile-media: 768px;
