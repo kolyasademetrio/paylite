@@ -8,6 +8,9 @@
 @import "layouts/_footer";
 @import "layouts/_main";
 @import "components/_presentation";
+@import "components/advantages";
+@import "components/pricing";
+@import "components/available";
 
 .container {
   max-width: $max-width;
