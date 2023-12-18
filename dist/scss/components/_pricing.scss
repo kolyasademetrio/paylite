@@ -23,14 +23,33 @@
     display: flex;
 
     @media screen and (max-width: $tablet-media) {
+      margin-left: -12px;
+      margin-right: -12px;
+    }
+
+    @media screen and (max-width: $mobile-media) {
       margin-left: 0;
       margin-right: 0;
+      flex-wrap: wrap;
     }
   }
 
   &__listItem {
     padding: 0 40px 80px;
     width: 50%;
+
+
+    @media screen and (max-width: $tablet-media) {
+      padding-left: 12px;
+      padding-right: 12px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: $mobile-media) {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 66px;
+    }
   }
 
   &__listItemInner {}
@@ -49,6 +68,7 @@
     font-family: $ff-secondary-light;
     color: $color-text-secondary;
     font-size: 24px;
+    line-height: 1.4;
     padding: 0 0 5px;
   }
 
@@ -56,6 +76,7 @@
     font-family: $ff-secondary-bold;
     color: $color-text-secondary;
     font-size: 36px;
+    line-height: 1.4;
 
     &.m-primary {
       color: $color-text;
@@ -68,12 +89,19 @@
 
   &__listItemHeaderImgWrap {
     width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+
+    @media screen and (max-width: $tablet-media) {
+      width: 164px;
+      height: 164px;
+    }
   }
 
   &__listItemHeaderImg {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   &__listItemMiddle {
@@ -81,6 +109,10 @@
     padding: 12px 0 16px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: $mobile-media) {
+      gap: 5px;
+    }
   }
 
   &__listItemMiddleItem {}
@@ -91,6 +123,10 @@
     color: $color-text-secondary;
     font-size: 20px;
     padding: 0 0 10px;
+
+    @media screen and (max-width: $mobile-media) {
+      padding-bottom: 20px;
+    }
   }
 
   &__listItemMiddleItemFooter {
