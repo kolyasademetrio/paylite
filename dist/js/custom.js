@@ -89,41 +89,40 @@ $(function () {
   // }
 
   /* components */
-  //  if ($('.js-agency-slider').length) {
-  //     $('.js-agency-slider').slick({
-  //        dots: true,
-  //        autoplay: true,
-  //        infinite: true,
-  //        speed: 300,
-  //        slidesToShow: 4,
-  //        slidesToScroll: 1,
-  //        nextArrow: '<button type="button" class="slick-next"></button>',
-  //        prevArrow: '<button type="button" class="slick-prev"></button>',
-  //        responsive: [
-  //           {
-  //              breakpoint: 1024,
-  //              settings: {
-  //                 slidesToShow: 3,
-  //                 slidesToScroll: 1
-  //              }
-  //           },
-  //           {
-  //              breakpoint: 768,
-  //              settings: {
-  //                 slidesToShow: 2,
-  //                 slidesToScroll: 1
-  //              }
-  //           },
-  //           {
-  //              breakpoint: 476,
-  //              settings: {
-  //                 slidesToShow: 1,
-  //                 slidesToScroll: 1
-  //              }
-  //           }
-  //        ]
-  //     });
-  //  };
+  if ($('.js-available-slider').length) {
+    $('.js-available-slider').slick({
+      dots: false,
+      autoplay: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      nextArrow: '<button type="button" class="slick-next slick-btn"><svg width="44" height="24" viewBox="0 0 44 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M43.0607 13.0607C43.6464 12.4749 43.6464 11.5251 43.0607 10.9393L33.5147 1.3934C32.9289 0.807611 31.9792 0.807611 31.3934 1.3934C30.8076 1.97919 30.8076 2.92893 31.3934 3.51472L39.8787 12L31.3934 20.4853C30.8076 21.0711 30.8076 22.0208 31.3934 22.6066C31.9792 23.1924 32.9289 23.1924 33.5147 22.6066L43.0607 13.0607ZM0 13.5H42V10.5H0V13.5Z" fill="#D9D9D9"/></svg></button>',
+      prevArrow: '<button type="button" class="slick-prev slick-btn"><svg width="44" height="24" viewBox="0 0 44 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.93934 10.9393ZM2 13.5H44V10.5H2V13.5Z" fill="#D9D9D9"/></svg></button>',
+      // responsive: [{
+      //     breakpoint: 1024,
+      //     settings: {
+      //       slidesToShow: 3,
+      //       slidesToScroll: 1
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 768,
+      //     settings: {
+      //       slidesToShow: 2,
+      //       slidesToScroll: 1
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 476,
+      //     settings: {
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1
+      //     }
+      //   }
+      // ]
+    });
+  };
 
   //  if ($('.js-agency-slider').length) {
   //     $(window).on('resize orientationchange', function () {

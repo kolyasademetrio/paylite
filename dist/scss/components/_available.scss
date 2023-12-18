@@ -23,8 +23,8 @@
 
     @media screen and (max-width: $mobile-media) {
       left: -40px;
-      top: 265px;
-      width: 245px;
+      top: 308px;
+      width: 240px;
     }
   }
 
@@ -52,10 +52,28 @@
   &__listWrap {}
 
   &__list {
-    // @media screen and (max-width: $mobile-media) {
-    //   margin-left: 20px;
-    //   margin-right: 20px;
-    // }
+    position: relative;
+
+    .slick-btn {
+      position: absolute;
+      top: calc(50% - 40px);
+
+      @media screen and (max-width: $mobile-media) {
+        top: 130px;
+
+        svg {
+          width: 20px;
+        }
+      }
+    }
+
+    .slick-prev {
+      left: 0;
+    }
+
+    .slick-next {
+      right: 0;
+    }
   }
 
   &__listItem {}
@@ -79,6 +97,7 @@
     @media screen and (max-width: $mobile-media) {
       width: 100%;
       justify-content: center;
+      margin-bottom: 30px;
     }
   }
 
@@ -89,6 +108,10 @@
 
     @media screen and (max-width: $tablet-media) {
       max-width: 390px;
+    }
+
+    @media screen and (max-width: $mobile-media) {
+      max-width: 274px;
     }
   }
 
@@ -110,9 +133,7 @@
     padding: 0 0 12px;
   }
 
-  &__listItemContentList {
-    padding-left: 26px;
-  }
+  &__listItemContentList {}
 
   &__listItemContentListItem {
     color: $color-black;
@@ -120,12 +141,43 @@
     font-size: 20px;
     line-height: 1.4;
     padding-bottom: 12px;
-    list-style-type: disc;
+    padding-left: 26px;
+    position: relative;
 
-    &::marker {
-      width: 15px;
-      height: 15px;
+    &:before {
+      content: "·";
+      font-size: 60px;
+      vertical-align: middle;
+      line-height: 1;
       color: $color-text;
+      position: absolute;
+      left: 0;
+      top: -20px;
     }
+  }
+
+  &__btnWrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+
+    @media screen and (max-width: $mobile-media) {
+      justify-content: center;
+      padding-top: 50px;
+    }
+  }
+
+  &__btn {
+    color: $color-text;
+    font-family: $ff-secondary-bold;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  &__icon {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin: 0 0 0 20px;
   }
 }
