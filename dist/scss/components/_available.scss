@@ -1,25 +1,131 @@
 .available {
-  &__title {}
+  padding: 122px 0 50px;
+  position: relative;
+  overflow: hidden;
 
-  .accent {}
+  @media screen and (max-width: $tablet-media) {
+    padding-top: 110px;
+    padding-bottom: 60px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__imgBg {
+    position: absolute;
+    left: 0;
+    top: 246px;
+    height: auto;
+    width: 370px;
+    z-index: 0;
+
+    @media screen and (max-width: $mobile-media) {
+      left: -40px;
+      top: 265px;
+      width: 245px;
+    }
+  }
+
+  &__title {
+    color: $color-text;
+    font-family: $ff-base-bold;
+    font-size: 36px;
+    line-height: 1.4;
+    max-width: 60%;
+    padding: 0 0 70px;
+
+    @media screen and (max-width: $tablet-media) {
+      max-width: 100%;
+      font-size: 32px;
+      padding-bottom: 50px;
+    }
+
+    .accent {
+      color: $color-text-accent;
+      text-transform: uppercase;
+    }
+  }
+
 
   &__listWrap {}
 
-  &__list {}
+  &__list {
+    // @media screen and (max-width: $mobile-media) {
+    //   margin-left: 20px;
+    //   margin-right: 20px;
+    // }
+  }
 
   &__listItem {}
 
-  &__listItemInner {}
+  &__listItemInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  &__listItemImgWrap {}
+    @media screen and (max-width: $mobile-media) {
+      flex-wrap: wrap;
+    }
+  }
 
-  &__listItemImg {}
+  &__listItemImgWrap {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
-  &__listItemContent {}
+    @media screen and (max-width: $mobile-media) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
 
-  &__listItemContentTitle {}
+  &__listItemImg {
+    display: block;
+    width: 90%;
+    height: auto;
 
-  &__listItemContentList {}
+    @media screen and (max-width: $tablet-media) {
+      max-width: 390px;
+    }
+  }
 
-  &__listItemContentListItem {}
+  &__listItemContent {
+    margin-top: -70px;
+
+    @media screen and (max-width: $mobile-media) {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  &__listItemContentTitle {
+    color: $color-text-secondary;
+    font-family: $ff-secondary-bold;
+    font-size: 48px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0 0 12px;
+  }
+
+  &__listItemContentList {
+    padding-left: 26px;
+  }
+
+  &__listItemContentListItem {
+    color: $color-black;
+    font-family: $ff-secondary-bold;
+    font-size: 20px;
+    line-height: 1.4;
+    padding-bottom: 12px;
+    list-style-type: disc;
+
+    &::marker {
+      width: 15px;
+      height: 15px;
+      color: $color-text;
+    }
+  }
 }
