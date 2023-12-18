@@ -2315,6 +2315,195 @@ img {
   margin: 0 0 0 20px;
 }
 
+.formWrapper {
+  padding: 50px 0 50px;
+}
+.formWrapper__title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #2E459C;
+  font-family: "rubik-bold", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 0;
+}
+@media screen and (max-width: 991px) {
+  .formWrapper__title {
+    font-size: 36px;
+    padding-bottom: 40px;
+  }
+}
+.formWrapper__subtitle {
+  text-align: center;
+  color: #2E459C;
+  font-family: "rubik-regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  padding: 0 0 40px;
+}
+@media screen and (max-width: 991px) {
+  .formWrapper__subtitle {
+    display: none;
+  }
+}
+.formWrapper__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+@media screen and (max-width: 991px) {
+  .formWrapper__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.formWrapper__item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 50%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+@media screen and (max-width: 991px) {
+  .formWrapper__item {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.formWrapper__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.formWrapper__listItem {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 33px 44px;
+  background-color: #EAEBEE;
+  border-radius: 25px;
+  color: #2E459C;
+  font-family: "co-headline-bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+@media screen and (max-width: 991px) {
+  .formWrapper__listItem {
+    padding: 25px 25px 35px 35px;
+    font-size: 16px;
+  }
+}
+.formWrapper__listItem:before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 29px;
+  background: url(../images/check.svg) center center no-repeat;
+  background-size: 100% 100%;
+  margin-right: 33px;
+}
+@media screen and (max-width: 991px) {
+  .formWrapper__listItem:before {
+    width: 37px;
+    height: 22px;
+    margin-right: 22px;
+  }
+}
+.formWrapper__footer {
+  padding: 60px 0 0;
+}
+.formWrapper__footerDelimiter {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  color: #2E459C;
+  text-align: center;
+  font-family: "rubik-regular", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.formWrapper__footerDelimiter:before, .formWrapper__footerDelimiter:after {
+  content: "";
+  height: 3px;
+  background-color: #DDDDDD;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.formWrapper__footerTitle {
+  padding: 30px 0 0;
+  color: #2E459C;
+  text-align: center;
+  font-family: "rubik-bold", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+@media screen and (max-width: 991px) {
+  .formWrapper__footerTitle {
+    font-size: 24px;
+  }
+}
+.formWrapper__footerLinkWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.formWrapper__footerLink {
+  padding: 20px 0 0;
+  color: #2E459C;
+  text-align: center;
+  font-family: "rubik-bold", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+@media screen and (max-width: 991px) {
+  .formWrapper__footerLink {
+    font-size: 24px;
+  }
+}
+
 .container {
   max-width: 1164px;
   margin-left: auto;
