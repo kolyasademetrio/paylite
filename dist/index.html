@@ -10,7 +10,7 @@
   <meta name="keywords" content="" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/main.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body class="loaded">
@@ -229,7 +229,23 @@
           <div class="inner">
             <h4 class="available__title">Available via hardware or software terminal <span class="accent">for free!</span></h4>
             <div class="available__listWrap">
-              <ul class="available__list">
+              <ul class="available__list js-available-slider">
+                <li class="available__listItem">
+                  <div class="available__listItemInner">
+                    <div class="available__listItemImgWrap">
+                      <img src="images/hardware-1.png" alt="Hardware image" class="available__listItemImg">
+                    </div>
+                    <div class="available__listItemContent">
+                      <h5 class="available__listItemContentTitle">Clover Flex</h5>
+                      <ul class="available__listItemContentList">
+                        <li class="available__listItemContentListItem">6 LCD color touch screen</li>
+                        <li class="available__listItemContentListItem">1D/2D barcode scanner/camera</li>
+                        <li class="available__listItemContentListItem">Connectivity: WiFi, LTE</li>
+                        <li class="available__listItemContentListItem">Attery Life: At least 8 hours of use for a typical SMB</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
                 <li class="available__listItem">
                   <div class="available__listItemInner">
                     <div class="available__listItemImgWrap">
@@ -248,8 +264,12 @@
                 </li>
               </ul>
             </div>
+            <div class="available__btnWrap">
+              <a class="available__btn" href="/">See all <img src="images/arrow-circle.svg" alt="arrow" class="available__icon" /></a>
+            </div>
           </div>
         </div>
+        <img src="images/available-circle.png" alt="background" class="available__imgBg">
       </section>
     </main>
     <!-- CONTENT EOF   -->
@@ -257,16 +277,7 @@
     <footer class="footer"> footer </footer>
     <!-- FOOTER EOF   -->
   </div>
-  <!-- BODY EOF   -->
-  <script src="js/jquery-3.0.0.min.js"></script>
-  <script src="js/jquery-migrate-1.4.1.min.js"></script>
-  <script src="js/components/slick.js"></script>
-  <!--
-	<script src="js/components/jquery.fancybox.js" ></script>
-	<script src="js/components/jquery.formstyler.js" ></script>
-	<script src="js/components/jquery.mCustomScrollbar.js" ></script>
-	-->
-  <script src="js/custom.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

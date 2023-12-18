@@ -38,12 +38,12 @@ function scss() {
     .pipe(sourcemaps.init()) //Что б в режиме разработчика показывало норм стили
     .pipe(plumber()) // Чтоб при ошибке не падал сервер
     .pipe(sass({
-      outputStyle: 'compressed'
+      // outputStyle: 'compressed'
     }).on('error', sass.logError)) // Преобразуем Sass в CSS посредством
     .pipe(autoprefixer(['last 10 versions', '> 1%', 'ie 9', 'ie 10'], {
       cascade: true
     })) // Создаем префиксы
-    .pipe(rename('main.min.css'))
+    .pipe(rename('style.css'))
     .pipe(sourcemaps.write('.'))
     .pipe(dest('app/css'));
 }
